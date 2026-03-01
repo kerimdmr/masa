@@ -3,24 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AR Görüntüle</title>
+  <title>Masa AR Görüntüle</title>
+
+  <!-- iOS AR Quick Look için önerilen meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
   <style>
-    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial; margin: 32px; }
-    .card { max-width: 520px; padding: 20px; border: 1px solid #e5e5e5; border-radius: 14px; }
-    a.btn { display:inline-block; padding:14px 18px; border-radius:12px; text-decoration:none; border:1px solid #111; }
-    .muted { color:#666; font-size:14px; margin-top:10px; line-height:1.4; }
+    body {
+      font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+    }
+
+    .card {
+      max-width: 520px;
+      padding: 28px;
+      border: 1px solid #e5e5e5;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    a.btn {
+      display: inline-block;
+      padding: 16px 26px;
+      border-radius: 14px;
+      text-decoration: none;
+      border: 1px solid #111;
+      font-size: 18px;
+      font-weight: 600;
+      background: #111;
+      color: #fff;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 14px;
+      margin-top: 18px;
+      line-height: 1.5;
+    }
   </style>
 </head>
+
 <body>
   <div class="card">
     <h2>Ürünü AR’de Gör</h2>
 
-    <!-- iPhone/iPad: Quick Look otomatik açılır -->
-    <a class="btn" rel="ar" href="masa1.usdz">AR’de Aç</a>
+    <!-- AR Quick Look -->
+    <a class="btn" rel="ar" href="./masa1.usdz">
+      AR’de Aç
+    </a>
 
     <div class="muted">
-      iPhone/iPad’de Safari ile açıldığında AR Quick Look devreye girer.
-      Android’de dosya indirilebilir (normal).
+      iPhone/iPad’de Safari ile açıldığında AR Quick Look otomatik devreye girer.
+      Android cihazlarda dosya indirilebilir.
     </div>
   </div>
 </body>

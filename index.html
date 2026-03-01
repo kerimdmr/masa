@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR Görüntüle</title>
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial; margin: 32px; }
+    .card { max-width: 520px; padding: 20px; border: 1px solid #e5e5e5; border-radius: 14px; }
+    a.btn { display:inline-block; padding:14px 18px; border-radius:12px; text-decoration:none; border:1px solid #111; }
+    .muted { color:#666; font-size:14px; margin-top:10px; line-height:1.4; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Ürünü AR’de Gör</h2>
+
+    <!-- iPhone/iPad: Quick Look otomatik açılır -->
+    <a class="btn" rel="ar" href="model.usdz">AR’de Aç</a>
+
+    <div class="muted">
+      iPhone/iPad’de Safari ile açıldığında AR Quick Look devreye girer.
+      Android’de dosya indirilebilir (normal).
+    </div>
+  </div>
+</body>
+</html>
